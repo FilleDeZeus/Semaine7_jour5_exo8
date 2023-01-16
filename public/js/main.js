@@ -18,7 +18,7 @@ for (const property in competences) {
             element.textContent += ` ${competences[property]}`;
 
             if (Number(competences[property].slice(0, -1))<50) {
-                element.style = ".success";
+                element.style.backgroundColor = "red";
 
             } else if (Number(competences[property].slice(0, -1))>50  && Number(competences[property].slice(0, -1))!=100){
                 element.style.backgroundColor = "green";
